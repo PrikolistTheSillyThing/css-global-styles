@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City Block | CSS</title>
+    <style>
+        body {
+            background-color: #222;
+        }
+        #city {
+            background-color: aliceblue;
+            width: 400px;
+            height: 400px;
+            border: 5px solid cadetblue; 
+        }
+        #square {
+            background-color: darkgray;
+            width: 150px;
+            height: 150px;
+            display: inline-block;
+            margin-right: -4px;
+        }
+        .streetA {
+            background-color: dimgray;
+            width: 250px;
+            height: 150px;
+            display: inline-block;
+        }
+        .top-band {
+            height: 73px;
+            width: inherit;
+            border-bottom: 2px solid white;
+        }
+        .bottom-band {
+            height: 73px;
+            width: inherit;
+            border-top: 2px solid white;
+        }
+        .band-marker-h {
+            width: inherit;
+            height: 36px;
+            border-bottom: dashed 2px white;
+        }
+        .streetB {
+            background-color: dimgray;
+            width: 150px;
+            height: 250px;
+            margin-top: -4px;
+        }
+        .left-band {
+            border-right: 2px solid white;
+            width: 73px;
+            height: inherit;      
+            display: inline-block;
+        }
+        .right-band {
+            border-left: 2px solid white;
+            width: 73px;
+            height: inherit;
+            display: inline-block;
+            margin-left: -4px;
+        }
+        .band-marker-v {
+            border-right: 2px dashed white;
+            width: 36px;
+            height: inherit;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+   <div id="city"> 
+    <div id="square">
+    </div>
+    <div class="streetA">
+       <div class="top-band">
+        <div class="band-marker-h">
+        </div>
+       </div>
+       <div class="bottom-band">
+        <div class="band-marker-h"></div>
+       </div>
+    </div>
+    <div class="streetB">
+        <div class="left-band">
+            <div class="band-marker-v"></div>
+        
+        </div>
+        <div class="right-band">
+            <div class="band-marker-v"></div>
+        </div>
+    </div>
+   </div>
+
+</body>
+</html>
