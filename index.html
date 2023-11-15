@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STEPS | GLOBAL CSS</title>
+    <style>
+        body {
+            background-color: #233;
+        }
+        
+        .steps div {
+            width: 10px;
+            height: 50px;
+            background-color: orange;
+            /* margin: 5px; */
+            border: 1px solid black;
+        }
+        .container 
+            /* {border: 3px solid white;}  */
+
+        .steps {
+           /* background-color: yellow;*/
+            transform: rotate(-90deg); 
+        }
+        .steps div:nth-child(2) {
+            transform: translateX(+50px);
+        }
+        .steps div:nth-child(3) {
+            transform: translateX(+100px);
+        }
+        .steps div:nth-child(4) {
+            transform: translateX(+150px);
+        }
+        .steps div:nth-child(5) {
+            transform: translateX(+200px);
+            
+        }
+        .ball {
+            width: 50px;
+            height: 50px;
+            background: darkred;
+            border-radius: 100%;
+            margin-left: 220px;
+
+            animation: fall 5s steps(5, end) 10;
+        }
+
+        @keyframes fall {
+            from {margin-left: 220px;
+                transform: translateY(-250px) ;
+            }
+            to {margin-left: -30px;
+                transform: translateY(-5px) ;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+            <div class="steps"> 
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>
