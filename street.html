@@ -60,22 +60,61 @@
             height: 300px;
             display: inline-block;
         }
-        .building-tall-window {
+        .building-tall-windows div {
             width: 45px;
             height: 55px;
-            background-color: aquamarine;
             border: 5px solid brown;
             margin-left: 22px;
             margin-top: 10px;
         }
+        .building-tall-windows div:nth-child(1) {
+            background-color: turquoise;
+        }
+        .building-tall-windows div:nth-child(2) {
+            background-color: darkorchid;
+        }
+        .building-tall-windows div:nth-child(3) {
+            background-color: green;
+        }
        .building-small {
         display: inline-block;
+        width: 300px;
+        height: 150px;
+        background-color: wheat;
+        vertical-align: bottom;
        }
+       .door {
+        background-color: darkgray;
+        width: 50px;
+        height: 70px;
+        display: inline-block;
+        margin-left: 25px;
+        transform: translateY(80px)
+       }
+       .doorknob {
+        border-radius: 100%;
+        width: 7px;
+        height: 7px;
+        background-color: darkslategrey;
+        margin-left: 37px;
+        margin-top: 40px;
+       }
+       .building-small-windows div {
+        width: 50px;
+        height: 50px;
+        transform: translateX(100px) translateY(-40px);
+        border: 5px solid brown;
+        display: inline-block;
+        margin-left: 20px;
+        background-color: darkgoldenrod;
+    }
+        
        .cloud {
         display: inline-block;
         vertical-align: top;
         padding-top: 20px;
        }
+       
         
     </style>
 </head>
@@ -96,13 +135,26 @@
         </div>
         <div class="tree">🌲🌲</div>
         <div class="building-tall">
-            <div class="building-tall-window"></div>
-            <div class="building-tall-window"></div>
-            <div class="building-tall-window"></div>
+            <div class="building-tall-windows">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
 
         </div>
         <div class="cloud"><img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/64/cloud-icon.png" width="64" height="64"></div>
-        <div class="building-small">SMALL</div>
+        <div class="cloud"><img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/64/cloud-icon.png" width="64" height="64"></div>
+
+        <div class="building-small">
+            <div class="door">
+                <div class="doorknob"></div>
+            </div>
+            <div class="building-small-windows">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
 
 </body>
