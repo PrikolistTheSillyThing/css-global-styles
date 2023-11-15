@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Street Block | CSS </title>
+    <style>
+        body {
+            background-color: #223;
+            color: white;
+        }
+        .street {
+            border: 1px dotted red;
+        }
+        .house {
+            width: 150px;
+            display: inline-block;
+        }
+        .house-roof {
+            width: 0px;
+            height: 0px;
+            /* background-color: red; */
+
+            /* triangle */
+            border: 75px solid brown;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-width: 90px;
+        }
+        .house-wall {
+            background-color: antiquewhite;
+            width: 150px;
+            height: 150px; 
+        }
+        .house-window {
+            border: 5px solid brown;
+            width: 50px;
+            height: 50px;
+            background-color: darkorange;
+            transform: translateX(45px) translateY(45px);
+        }
+        .window-split-v {
+            height: inherit;
+            width: 23px; 
+            border-right: 5px solid brown; 
+        }
+        .window-split-h {
+            width: inherit;
+            border-bottom: 5px solid brown;
+            transform: translateY(-27px);
+        }
+        .tree {
+            display: inline-block;
+            font-size: 85px;
+            vertical-align: bottom;
+        }
+        .building-tall {
+            background-color: bisque;
+            width: 100px;
+            height: 300px;
+            display: inline-block;
+        }
+        .building-tall-window {
+            width: 45px;
+            height: 55px;
+            background-color: aquamarine;
+            border: 5px solid brown;
+            margin-left: 22px;
+            margin-top: 10px;
+        }
+       .building-small {
+        display: inline-block;
+       }
+       .cloud {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 20px;
+       }
+        
+    </style>
+</head>
+<body>
+
+    <div class="street">
+
+        <div class="house">
+            <div class="house-roof"></div>
+
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="window-split-v"></div>
+                    <div class="window-split-h"></div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="tree">🌲🌲</div>
+        <div class="building-tall">
+            <div class="building-tall-window"></div>
+            <div class="building-tall-window"></div>
+            <div class="building-tall-window"></div>
+
+        </div>
+        <div class="cloud"><img src="https://icons.iconarchive.com/icons/flaticonmaker/flat-style/64/cloud-icon.png" width="64" height="64"></div>
+        <div class="building-small">SMALL</div>
+    </div>
+
+</body>
+</html>
