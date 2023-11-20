@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GALLERY 3D</title>
+    <style>
+        body {
+            background-color: #233;
+            perspective: 1000px;;
+        }
+        #gallery {
+            width: 500px;
+            height: 500px;
+            border: 5px solid white;
+
+            transform: rotateX(45deg);
+            margin: 100px;
+        }
+        #gallery div:nth-child(1) {
+            height: 200px;
+            width: 200px;
+
+            display: inline-block;
+            vertical-align: top;
+
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/turku-finland-1639425560.jpg);
+            background-size: 1000px 1000px;
+            background-position: center;
+        }
+        #gallery div:nth-child(2) {
+            height: 300px;
+            width: 300px;
+
+            display: inline-block;
+            vertical-align: top;
+            margin-left: -4px;
+
+            background-image: url(https://hips.hearstapps.com/hmg-prod/images/turku-finland-1639425560.jpg);
+            background-size: 1000px 1000px;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div id="gallery">
+        <div></div>
+        <div></div>
+        <div>SLIDE 3</div>
+        <div>SLIDE 4</div>
+        <div>SLIDE 5</div>
+    </div>
+
+
+</body>
+</html>
