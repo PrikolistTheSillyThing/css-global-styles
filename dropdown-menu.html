@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DROPDOWN MENU | Pure CSS</title>
+    <style>
+         body {
+            background-color: #333;
+            font-family: arial;
+            font-size: 8px;
+        }
+        .dropdown{
+            width: 70px;
+            
+        }
+        .dropdown .list {
+            display: none;
+            list-style-type: none;
+            padding:0;
+            margin-top: -1px;
+            background-color: #999;
+            
+        }
+        .dropdown .list li {
+            padding: 5px;
+            transition: 0.5s;
+            background-color: #bbb;
+            border-top: 1px solid rgb(216, 216, 216);
+        }
+        .dropdown .list li:hover {
+            background-color: rgb(219, 219, 219);
+        }
+        .dropdown input {
+            display: none;
+            
+        }
+        .dropdown input:checked +label + .list {
+            display: block;
+            
+        }
+        .dropdown label {
+            user-select: none;
+            background-color: #999;
+            height: 10px;
+            border-radius: 5px;
+            display: block;
+            padding: 5px;
+            text-align: left;
+            transition: 0.5s;
+            text-align: center;
+        }
+        .dropdown label:hover {
+            background-color: #AAA;
+        }
+        .dropdown label::after {
+            content: "▼";
+            
+        }
+        .dropdown input:checked + label::after {
+            content: "▲";
+            
+        }
+        
+       
+        .dropdown a {
+            text-decoration: none;
+            color: #222;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    
+    <nav class="dropdown">
+        
+        <input type="checkbox" id="toggler">
+
+        <label for="toggler">
+            Dropdown
+        </label>
+        
+        <ul class="list">
+            <li><a href="">item 1</a></li>
+            <li><a href="">item 2</a></li>
+            <li><a href="">item 3</a></li>
+        </ul>
+    </nav>
+
+    
+    
+</body>
+</html>
