@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Selectors | Cinema</title>
+    <style>
+        body {
+            background-color: #333;
+            color: white;
+            font-family: arial;
+        }
+        .cinema {
+            border: 1px solid red;
+            padding: 5px;
+            text-align: center;
+        }
+        .cinema .vip span {
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            vertical-align: top;
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Orange-Seat-icon.png);
+        }
+        .cinema .vip .row:nth-child(1) span:nth-child(7):after {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png);
+            display: block;
+        }
+        .cinema .main span {
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            vertical-align: top;
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+        }
+        .cinema .main span:nth-child(5) {
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            vertical-align: top;
+            background-image: none;
+        }
+        .cinema .main .row:nth-child(3) span:nth-child(6):after {
+            content: url(https://icons.iconarchive.com/icons/aha-soft/free-large-boss/48/Caucasian-Female-Boss-icon.png);
+            display: block;
+        }
+        .cinema .front span {
+            display: inline-block;
+            width: 72px;
+            height: 72px;
+            background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+        }
+    </style>
+</head>
+<body>
+    <h1>Advanced CSS Selectors <br>Cinema </h1>
+    <div class="cinema">
+        <h2>VIP</h2>
+        <div class="vip">
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
+            <span>7</span></div>
+        </div>
+            
+        <div class="main">
+            <h2> Main </h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span></span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span></span>
+            <span>5</span>
+            <span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span></span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+        </div>
+
+        <div class="front">
+            <h2>Front</h2>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+        </div>
+    </div>
+</body>
+</html>
